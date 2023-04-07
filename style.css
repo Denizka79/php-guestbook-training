@@ -7,20 +7,24 @@
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
+    min-height: 100vh; /*Сделано, что бы footer прилипал к нижней границе*/
+    display: flex; /*Сделано, что бы footer прилипал к нижней границе*/
+    flex-direction: column; /*Сделано, что бы footer прилипал к нижней границе*/
 }
 
 header {
     background-color: pink;
-}
-
-h1 {
-    padding-top: 0;
-}
-
-.header-top {
     display: flex;
     justify-content: space-between;
     padding: 20px;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight:700;
 }
 
 ul {
@@ -37,18 +41,31 @@ li:first-child {
     margin-left: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 main {
-    background-color: lightgreen;
+    /*background-color: lightgreen;*/
     display: flex;
     justify-content: center;
 }
 
 .container {
     max-width: 100%;
-    width: 960px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
+    width: 600px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+input {
+    width: 100%;
+}
+
+.comment-input {
+    height: 70px;
 }
 
 footer {
@@ -56,5 +73,6 @@ footer {
     justify-content: center;
     background-color: lightblue;
     text-align: center;
+    margin-top: auto; /*Сделано, что бы footer прилипал к нижней границе*/
 }
 

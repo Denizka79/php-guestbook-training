@@ -9,25 +9,37 @@
 </head>
 <body>
     <header class="header">
-        <div class="header-top">
-            <div class="logo"><h2>GUESTBOOK</h2></div>
-            <div class="nav">
-                <ul>
-                    <li>Home</li>
-                    <li>Comments</li>
-                    <li>About</li>
-                </ul>
-            </div>
-        </div>
-        <div class="header-bottom">
-            <p>Leave your comments!</p>
+        <div class="logo">GUESTBOOK</div>
+        <div class="nav">
+            <ul>
+                <li>Home</li>
+                <li><a href="comments.html">Comments</a></li>
+                <li>About</li>
+            </ul>
         </div>
     </header>
     <main class="main">
-        <div class="container">A form will be here.</div>
+        <div class="container">
+            <div class="name">
+                <label for="name">Name:</label>
+                <input id="name" name="name" type="text" placeholder="Enter your name">
+            </div>
+            <div class="email">
+                <label for="email">Email:</label>
+                <input id="email" name="email" type="email" placeholder="Enter your email">
+            </div>
+            <div class="comment">
+                <label for="comment">Comment:</label>
+                <br>
+                <input class="comment-input" id="comment" name="comment" type="text">
+            </div>
+            <div class="submit-button">
+                <button id="submit" name="submit" type="submit">Send</button>
+            </div>
+        </div>
     </main>
     <footer class="footer">
-        <div class="container">Footer is under construction too.</div>
+        <div class="container">&#169; Denis Meshcheryakov. 2023</div>
     </footer>
 </body>
 </html>
