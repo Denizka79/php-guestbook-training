@@ -14,6 +14,7 @@ $feedback = mysqli_fetch_all($result, MYSQLI_ASSOC);
                 <div class="feedback-name"><span>Name: </span><?php echo $item["name"]; ?></div>
                 <div class="feedback-email"><span>Email: </span><?php echo $item["email"]; ?></div>
                 <div class="feedback-comment"><span>Comment: </span><?php echo $item["body"]; ?></div>
+                <div class="feedback-date"><span>Date: </span><?php echo $item["date"]; ?></div>
                 <?php endforeach; ?>
             </div>
         </div>
